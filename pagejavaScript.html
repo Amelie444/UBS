@@ -1,0 +1,41 @@
+<!-- page ceremonie-->
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alternance.html">
+    <script src="ceremonie.js"></script>
+</html>
+
+<body>
+    <a href="page1.html"><img src="buzzer.JPG" width=250px height=180px alt=""></a>
+    <div class="containerceremony">
+    <h1 style="text-align:center;"> L'ENSIBS célèbre ses diplômés</h1>
+    <p> La cérémonie de remise des diplômes est un événement majeur dans la vie de l'école d'ingénieur,
+        cette cérémonie est l'occasion de célébrer à la fois la réussite des élèves ingénieurs et la fin de leurs études.
+        organisée depuis de nombreuses années, cette cérémonie est devenur incontournable.
+    </p>
+
+    <script>
+        function promotion(année){
+            var image;
+            if (année==2023){
+                image="promotion 2023.jpg"
+            }
+            else if (année==2022){
+                image="promotion 2022.jpg"
+            }
+            else{
+                image="promotion 2021.jpg"
+            }
+            document.getElementById('monImage').src=image;
+        }
+    </script>
+    <img id="monImage" src="cérémonie.jpg" width="1050" height="400">
+    <p>
+        <button class="button-ceremony" type="button" onclick="promotion(2023)">promotion 2023 </button>
+        <button class="button-ceremony" type="button" onclick="promotion(2022)">promotion 2022 </button>
+        <button class="button-ceremony" type="button" onclick="promotion(2021)">promotion 2021 </button>
+    </p>
+    </div>
+</body>
+</html>

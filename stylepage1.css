@@ -1,0 +1,305 @@
+
+
+    body, html {
+      height: 100%;
+      font-family: Arial;
+      display:flex;
+      flex-direction:column;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-img {
+      /* ajouter l'image */
+      background-image: url("jimmy.jpg");
+    
+      min-height: 380px;
+    
+      /* Centrer et redimensionner  l'image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    /* Ajouter des styles au conteneur de formulaire */
+    .container {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+      max-width: 300px;
+      padding: 16px;
+      background-color: white;
+    }
+    
+    /* Champs de saisie  */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Définir le style pour le bouton d'envoi */
+    .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    p,h3{
+      color:dimgray;
+      font-size:18px;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    .button-style{
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size:18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-weight:bold;
+        }
+
+    a{
+      color:green;
+      font-size:18px;
+    }
+
+    span{
+      color:dimgray
+    }
+
+    .section1{
+      background-color: whitesmoke; 
+      color: dimgray; 
+      width: 150px;
+     height:auto; 
+     font-size:18px;
+     padding:20px;
+     margin:10px; 
+    }
+
+    .section2{
+      background-color:whitesmoke;
+      color:green;
+      width: 150px; 
+      padding:20px;    
+      height: auto; 
+      font-size:18px;  
+      margin: 10px;  
+    }
+
+    .main{
+      display:flex;
+      flex:1;/*rajoute une section donc divise en 2 la page*/
+      width:70%; /*ajoute des marges de 10% chaque coté*/
+      margin: 20px auto;
+    }
+
+    .content{
+      width:80%;
+      padding:20px;
+    }
+
+    .sectionsleft{
+      width:40%;
+      display:flex;
+      flex-direction:column;
+      padding:20px;
+    }
+
+    .sectionleft{
+      background-color:#f0f0f0;
+      width:230px;
+      padding:10px;
+      margin:10px;
+    }
+
+    .containerleftright{
+      display:flex;
+      justify-content:space-between;
+      width:70%;
+      margin:5px auto; /*Centre le contenu horizontalement*/
+    }
+
+    .left, .right{
+      width:60%;
+      padding:5px;
+    }
+
+    .button-container{
+      margin:20px 0;
+      width:70%;
+      margin:5px auto;
+    }
+
+.containerceremony{
+  width:70%;
+  margin:auto;
+}
+
+
+.button-ceremony{
+  background-color:green;
+  color:white;
+  border:5px solid black;
+  padding:15px 40px;
+  text-align: center;
+  font-size:18px;
+  font-weight:bold;
+  margin: 10px 60px;
+  border-radius:10px; /*arrondir les bords*/
+  box-shadow: 0 10px 15px green;
+  font-family: 'Times New Roman';
+}
+
+.containerMedia{
+  width:80%;
+  margin: auto;
+}
+
+.video-container{
+  display: flex;
+  justify-content:space-around;
+  align-items:center;
+  margin-top:20px;
+}
+
+.video{
+  flex:1;
+  margin:10px;
+}
+
+iframe{
+  width:100%;
+  height:350px;
+}
+
+.container_informations{
+  width:80%;
+  margin:2px auto; /*centre contenu*/
+  padding:30px;
+}
+
+table, th, td{
+  border:1px solid black;
+  border-collapse:collapse; /*bordure adjacentes des cellules, si on enleve cette ligne alors double bordure*/
+}
+
+th{ /*th colonne et td ligne */
+  text-align:left;
+}
+
+/*table 2*/
+caption{
+  caption-side:top;/*légende au dessus du tableau*/
+  font-size:18px;
+  margin-bottom: 10px ;/*espace entre légende et le tableau*/
+  font-weight:bold;
+  text-align:center;/*centrer la légende*/
+  color:green;
+}
+
+.third-table{
+  border:1px solid;
+  border-collapse:collapse;
+}
+
+.third-table tr:nth-child(even){
+  background-color:rgba(150, 212, 212,0.4)
+}
+
+.third-table tr:nth-child(even), .third-table td:nth-child(even){
+  background-color:rgba(150, 212, 212,0.4)
+}
+
+#myfooter{ /*identifiant avec un hashtag et s'utilise que 1 fois*/
+  background-color:lightblue;
+  color:black;
+  padding:40px;
+  text-align:center;
+}
+
+#myfooterJS{ /*identifiant avec un hashtag et s'utilise que 1 fois*/
+  font-size::36px;
+  text-align:center;
+  margin-top:50px;
+  text-transform:uppercase; /*transformer texte en majuscule*/
+  letter-spacing:2px;
+}
+
+#myfooterJS:hover{/*passe le pointeur sur l'élément "myfooter" le style s'applique*/
+  color:green;
+}
+
+#button-myfooter{
+  display:block; /*afficher en tant que bloc pour occuper toute la largeur*/
+  margin:20px auto;
+  cursor:pointer;
+  background-color:lightblue;/*couleur de fond du bouton*/
+  color:black;/*couleur du texte */
+  border:5px solid black;/*Bordure*/
+  padding:15px 40px;/*Espacement intérieur*/
+  text-align:center;/*allignement du texte*/
+  font-size:22px;/*taille de la police*/
+  font-weight:bold;/*poids de la police*/
+  font-family:'Times New Roman';/*Typographie*/
+}
+
+#button-myfooter:hover{
+  background-color:green;
+}
+
+#Iframe_ENSIBS{
+  border:2px solid #2c3e50;
+  border-radius:5px; /*coins arrondis pour la page web*/
+}
+
+#Iframe_ENSIBS_a{
+  color:#2980b9;/*couleur du texte des liens*/
+  text-decoration:none;/*supprime la décoration par defaut (soulignement)*/
+  font-weight:bold;/*texte en gras*/
+}
+
+#Iframe_ENSIBS_a:hover{
+  text-decoration:underline;/*souligner au survol*/
+}
+
+#button-myfooter-informations{
+  background-color:lightblue;/*couleur de fond du bouton*/
+  color:black;
+  border:5px solid black;/*Bordure*/
+  padding:15px 40px;/*Espacement intérieur*/
+  text-align:center;/*allignement du texte*/
+  font-size:18px;/*taille de la police*/
+  margin:10px auto;
+  border-radius:10px;
+  font-family:'Times New Roman';/*Typographie*/
+}
+
+#button-myfooter-informations:hover{
+  background-color:green;
+}
+

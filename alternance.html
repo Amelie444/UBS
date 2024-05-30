@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+<title>TP 1</title>
+
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Exemple titre et sous titre</title>
+    <style>
+        /*style pour rendre les sous titre visible*/
+        h2,h3,h4,h5,h6{
+            color:green;
+        }
+    </style>
+
+<link rel="shortcut icon" href="icone ensibs.png" type="image/x-icon">
+<link rel="stylesheet" href="stylepage1.css">
+
+</head>
+<body>
+
+     <!-- ajouter un formulaire à une image -->
+
+<style>
+    body, html {
+      height: 100%;
+      font-family: Arial;
+      display:flex;
+      flex-direction:column;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-img {
+      /* ajouter l'image */
+      background-image: url("jimmy.jpg");
+    
+      min-height: 380px;
+    
+      /* Centrer et redimensionner  l'image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    /* Ajouter des styles au conteneur de formulaire */
+    .container {
+      position: absolute;
+      right: 0;
+      margin: 20px;
+      max-width: 300px;
+      padding: 16px;
+      background-color: white;
+    }
+    
+    /* Champs de saisie  */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Définir le style pour le bouton d'envoi */
+    .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    p,h3{
+      color:dimgray;
+      font-size:18px;
+    }
+
+    .btn:hover {
+      opacity: 1;
+    }
+
+    .button-style{
+            background-color: green;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size:18px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-weight:bold;
+        }
+
+    a{
+      color:green;
+      font-size:18px;
+    }
+
+    span{
+      color:dimgray
+    }
+
+    .section1{
+      background-color: whitesmoke; 
+      color: dimgray; 
+      width: 150px;
+     height:auto; 
+     font-size:18px;
+     padding:20px;
+     margin:10px; 
+    }
+
+    .section2{
+      background-color:whitesmoke;
+      color:green;
+      width: 150px; 
+      padding:20px;    
+      height: auto; 
+      font-size:18px;  
+      margin: 10px;  
+    }
+
+    .main{
+      display:flex;
+      flex:1;/*rajoute une section donc divise en 2 la page*/
+      width:70%; /*ajoute des marges de 10% chaque coté*/
+      margin: 20px auto;
+    }
+
+    .content{
+      width:80%;
+      padding:20px;
+    }
+
+    .sectionsleft{
+      width:40%;
+      display:flex;
+      flex-direction:column;
+      padding:20px;
+    }
+
+    .sectionleft{
+      background-color:#f0f0f0;
+      width:230px;
+      padding:10px;
+      margin:10px;
+    }
+
+    .containerleftright{
+      display:flex;
+      justify-content:space-between;
+      width:70%;
+      margin:5px auto; /*Centre le contenu horizontalement*/
+    }
+
+    .left, .right{
+      width:60%;
+      padding:5px;
+    }
+
+    .button-container{
+      margin:20px 0;
+      width:70%;
+      margin:5px auto;
+    }
+
+
+    </style>
+    </head>
+    <body>
+    
+    <div class="bg-img">
+      <form action="/action_page.php" class="container">
+        <h1>Login</h1>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+    </head>
+
+
+    <h1> Diplôme d'Ingénieur Génie Industriel 4.0 en apprentissage </h1>
+
+    <div class="button-container">
+    <a href="https://www-ensibs.univ-ubs.fr/fr/formations/rechercher-une-formation.html"
+    class="button-style">Nouvelle recherche</a>
+    </div>
+    
+    <div class="containerleftright">
+    <div class="left">
+    <h2 style="color: green; font-size:18px;">Diplôme d'Ingénieur</h2><hr>
+    <h2 style="color: green; font-size:18px;">Ecole d'Ingénieurs ENSIBS</h2><hr>
+    <h2 style="color: green; font-size:18px;">Génie Industriel 4.0</h2><hr>
+    <h2 style="color: green; font-size:18px;">Durée: 3 année(s)</h2><hr>
+    </div>
+
+    <div class="right">
+    
+      <h2 style="color: green; font-size:18px;">BAC +5</h2><hr>
+      <h2 style="color: green; font-size:18px;">Lorient</h2><hr>
+      <h2 style="color: green; font-size:18px;">Apprentissage</h2><hr>
+      
+    </div>
+
+    </div>
+    <!-- Debut main-->
+<div class="main">
+  <div class="content">
+    <h2>Objectifs</h2>
+
+<p>L’ingénieur Génie Industriel 4.0, conçoit et gère des processus et des systèmes qui améliorent la <br>qualité et la productivité de la chaîne de valeur des entreprises. Il s’attarde à mieux faire les <br> choses en réduisant les risques pour l’homme et l’environnement.</p>
+<h2>Savoir-faire et compétences</h2>
+<p>    Comprendre, analyser et répondre aux besoins de l’industrie en déployant la technologie la plus adaptée.<br>
+    Manager des équipes transverses et  multiculturelles.<br>
+    Conduire des projets complexes.<br>
+    Animer la transition numérique de l’industrie et innover.<br>
+    Promouvoir une démarche d’amélioration continue collaborative.<br>
+    Proposer et animer des systèmes de management qui garantissent la maîtrise des risques <br>industriels, environnementaux ainsi ceux pour la santé/sécurité des salariés.<br></p>
+<h2>Contenu de la formation</h2>  
+<h3>Formation sous statut d'apprenti</h3>
+<p>1 mois à l'école et un mois en entreprise
+
+    6 mois consécutifs en entreprise en dernière année</p> 
+    <img src="GI.jpg" alt="image parcours" width="700" height="342">
+<h2>Contrôle des connaissances</h2>
+<h3>La pédagogie ENSIBS</h3> 
+<p>Le socle scientifique et technique que doit posséder l’ingénieur est tout de suite mis en pratique <br> au travers de projets qui sont <br>
+    proposés par les entreprises et/ou par la recherche.<br>
+    Outils numériques, méthode des cas, formation à distance, serious games, classes inversées <br> traversent les disciplines et assurent l’acquisition de compétences recherchées par les <br>professionnels.
+    L’évaluation des compétences acquises s’effectue en contrôle continu.<br>
+    Une mobilité internationale de 3 à 6 mois doit être effectuée avec la possibilité d’un semestre <br>ou d’une double diplomation à l’étranger.<br></p>
+<h2>Modalités de formation</h2>
+<p>Formation en alternance</p>
+<h2>Référentiel RNCP</h2>
+<a href="https://www.francecompetences.fr/recherche/rncp/35797/">RNCP35797</a>
+</div>
+<div class="sectionsleft">
+<div class="sectionleft">
+
+<!-- premiere section -->
+        <p style="color:green;font-weight:bold;">Contact</p>
+        <p style="font-weight:bold;">Ecole d'Ingénieurs <br>ENSIBS</p>
+        <p>Lorient </p>
+        <p style="font-weight:bold">Responsable
+            <br> pédagogique 
+            <br> Perrine Le Meur </p>
+        <p>Tél: 0297874025</p>
+        <p style="font-weight:bold;">Contact administratif
+        <a href="mailto:perrine.le-meur@univ-ubs.fr"
+        class="button-style"> Envoyer un mail</a>
+        
+         <p style="font-weight: bold;">Contact administratif
+            <br>Marion Tonnerre</p>
+            <a href="mailto:marion.tonnerre@univ-ubs.fr"
+            class="button-style"> Envoyer un mail</a>
+            </div>
+
+     
+<!-- deuxième section -->
+
+<div class="sectionleft">
+        <p style="color:green;
+        font-size:18px;font-weight:bold;">Informations <br>complémentaires</p>
+        <p style="color:green;
+        font-size:18px;font-weight:bold;">Comment candidater?</p>
+</div>
+
+<!-- troisieme section -->
+<div class="sectionleft">
+    <p style="color:green;
+    font-size:18px;font-weight:bold;"> Documents </p>
+    <p><img src="pdf.png" alt="icone pdf" width="20" height="20" >
+    <a 
+    href="C:\Users\ameli\Downloads\web riche\brochure.pdf">brochure Génie Industriel</a>    
+     <span >(2 Mo)</span> </p>
+    <p><img src="pdf.png" alt="icone pdf" width="20" height="20">
+    <a  href="C:\Users\ameli\Downloads\web riche\brochure ENSIBS 23-24.pdf">Brochure ENSIBS 2023-2024 </a>
+    <span >(7 Mo)</span>   </p>
+    <p><img src="pdf.png" alt="icone pdf" width="20" height="20">
+    <a href="C:\Users\ameli\Downloads\web riche\ING Genie industriel-1.pdf"> Fiche alternance </a>
+
+       <span > (68 Ko)</span> </p>
+
+  </div>
+  <div class="sectionleft">
+  <a href="https://www.univ-ubs.fr/fr/formation-initiale-continue/tarifs.html"
+  class="button-style"> Tarif</a>
+
+  <a href="https://www.univ-ubs.fr/fr/vie-des-campus/campus/sante-handicap.html"
+  class="button-style"> Santé & Handicape</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="pagejavaScript.html" class="button-style" style="width:210px;">Cérémonies</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="Média.html" class="button-style" style="width:210px;">Médias</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="Recherche.html" class="button-style" style="width:210px;">Recherche</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="Admission.html" class="button-style" style="width:210px;">Admission</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="Informations.html" class="button-style" style="width:210px;">Plus d'informations</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="index.html" class="button-style" style="width:210px;">UBS</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="ensibs.html" class="button-style" style="width:210px;">ENSIBS</a>
+  </div>
+
+  <div class="sectionleft">
+    <a href="formulaire.html" class="button-style" style="width:210px;">Formulaire</a>
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

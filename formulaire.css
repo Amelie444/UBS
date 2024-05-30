@@ -1,0 +1,70 @@
+body{
+    font-family:Arial,sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+form{
+    background-color:white;
+    padding:20px;
+    border-radius:8px;
+    max-width:600px; /*largeur totale du formulaire*/
+    margin:0 auto;
+}
+
+label{
+    display: block; /*definir l'élement comme un bloc, pour prendre toute la largeur*/
+    margin-bottom: 8px; /*ajouter un espace de 8px en bas de l'éléments*/
+    font-weight:bold; /*texte en gras */
+    color:#555; /*couleur de texte*/
+}
+
+/*style pour champs texte du formulaire*/
+input[type="texte"],
+input[type="email"],
+input[type="date"],
+select,
+textearea{
+    width:calc(100% - 20px);
+    padding:10px;
+    margin-bottom:20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size:16px;
+    box-sizing: border-box; /*inclure le padding et la bordure dans la largeur totale*/
+}
+
+/*style pour bputon radio et case a cocher */
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right:10px; /*marge a droite des boutons et case a cocher*/
+}
+
+/*Style pour les étiquettes apres les boutons radio et case a cocher -->aligner bouton avec label*/
+input[type="radio"]+ label,
+input[type="checkbox"] +label{
+    display: inline-block; /*texte aligné avec le bouton*/
+    margin-right:20px;
+    font-weight: normal; /*taille standard de la police on garde ce quon avait*/
+}
+
+/*Style pour le bouton de soumission */
+input[type="submit"]{
+    background-color:green;
+    color:white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+    font-size: 16px; 
+}
+
+input[type="submit"]:hover{
+    background-color:yellowgreen; /*couleur au survol*/
+}
